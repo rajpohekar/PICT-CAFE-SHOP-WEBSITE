@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="order.css"> <!-- Link to your CSS -->
+</head>
+
+<body>
+    <div id="confirmation-message">
+        <h1>Order Placed Successfully!</h1>
+        <p>Thank you for your order. Here are the details:</p>
+        <div id="order-details"></div>
+        <a href="index.html">Go back to menu</a> <!-- Link to go back to the menu -->
+    </div>
+    <script>
+        // Get cart data from local storage
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Display order details
+        const orderDetailsElement = document.getElementById('order-details');
+        if (cart.length > 0) {
+            cart.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.textContent = `${item.name} - ₹${item.price} x ${item.quantity}`;
+                orderDetailsElement.appendChild(itemElement);
+            });
+        } else {
+            orderDetailsElement.textContent = 'No items in your order.';
+        }
+    </script>
+</body>
+
+</html>

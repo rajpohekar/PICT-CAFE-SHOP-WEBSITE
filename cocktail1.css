@@ -1,0 +1,840 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: content-box; */
+}
+
+body {
+    margin: 1.5rem;
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 50px;
+    place-content: center;
+    place-items: center;
+    background-color: rgb(25, 19, 19);
+    background-image: radial-gradient((315deg, #120f13 0%, #12100e 74%));
+
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-clip: text;
+    color: transparent;
+}
+
+.tagLine {
+    height: 50rem;
+    width: 100%;
+    background-color: #98c6f5;
+    margin-bottom: 2.5rem;
+}
+
+#tagLine1 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+}
+
+#t1 {
+    text-align: center;
+}
+
+.mt-5 {
+    /* position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255); */
+    font-size: 70px;
+    font-weight: 600;
+    position: bottom;
+    background-image: url(https://res.cloudinary.com/duktrbero/image/upload/v1712670486/light_drink_ow0tkp.jpg);
+    background-size: 250px;
+    background-repeat: repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.mt-5:hover {
+    font-size: 70px;
+    font-weight: 600;
+    position: bottom;
+    background-image: url(https://res.cloudinary.com/duktrbero/image/upload/v1712670436/martini-cocktail-drink-with-ice-cubes-neon-iridescent-pink-blue-colors-minimal-night-party-life-juzz-concept-background-painted-with-light_114309-3854_zrpkgu.avif);
+    background-size: 250px;
+    background-repeat: repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: transform 0.2s;
+}
+
+/* #img{
+    width: 100%;
+    height: 15rem;
+    filter: blur(6px);
+    margin-bottom: 2rem;
+  } */
+.mt-5_1 {
+    color: rgb(211, 240, 248);
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: 1.5rem;
+}
+
+.box1:hover {
+    transform: scale(1.05);
+    /* Slightly scale up item on hover */
+
+    .fade-out {
+        animation: fadeOut 0.5s forwards;
+        /* Animation to fade item out */
+    }
+
+    @keyframes fadeOut {
+        to {
+            opacity: 0;
+            height: 0;
+            padding: 0;
+            /* Collapse space as the item fades out */
+            margin: 0;
+        }
+    }
+}
+
+#img1 {
+    --s: 250px;
+    /* the size of the image */
+    --b: 8px;
+    /* the border thickness*/
+    --g: 14px;
+    /* the gap */
+    --c: #974f37;
+    /* the color */
+
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .3s;
+}
+
+#img1:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}
+
+img+img {
+    border-radius: 50%;
+}
+
+.c_left1 {
+    margin-top: 5rem;
+    /* margin-left: 10rem; */
+    height: 2.5rem;
+    width: 50rem;
+    text-align: start;
+    animation: slidefromLeft 1s ease forwards;
+}
+
+@keyframes slidefromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.c_right1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+#img1 {
+    height: 250px;
+    width: 250px;
+    /* margin-left: 50rem; */
+    border-radius: 0.5rem;
+    box-shadow: rgb(132, 131, 131) 20rem;
+    margin-right: 2.5rem;
+}
+
+#txt1 {
+    text-align: right;
+    margin-right: 5rem;
+    padding-top: 1.5rem;
+    font-style: italic;
+    font-style: bold;
+    text-shadow: rgb(132, 131, 131) 2rem;
+    color: rgb(251, 234, 213);
+}
+
+#p1 {
+    text-align: center;
+    color: rgb(249, 204, 179);
+}
+
+.box2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    padding-top: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.box2:hover {
+    transform: scale(1.05);
+    /* Slightly scale up item on hover */
+
+    .fade-out {
+        animation: fadeOut 0.5s forwards;
+        /* Animation to fade item out */
+    }
+
+    @keyframes fadeOut {
+        to {
+            opacity: 0;
+            height: 0;
+            padding: 0;
+            /* Collapse space as the item fades out */
+            margin: 0;
+        }
+    }
+}
+
+#img2 {
+    --s: 250px;
+    /* the size of the image */
+    --b: 8px;
+    /* the border thickness*/
+    --g: 14px;
+    /* the gap */
+    --c: #903f8a;
+    /* the color */
+
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .3s;
+}
+
+#img2:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}
+
+.c_left2 {
+    animation: slidefromRight 1s ease forwards;
+}
+
+@keyframes slidefromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+#img2 {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-items: end;
+    margin-left: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+#p2 {
+    text-align: center;
+    margin-left: 1.5rem;
+    color: rgb(248, 207, 252);
+}
+
+#txt2 {
+    text-align: left;
+    margin-left: 6.5rem;
+    font-style: italic;
+    font-style: bold;
+    padding-top: 1.5rem;
+    color: rgb(248, 204, 219);
+}
+
+.box3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.box3:hover {
+    transform: scale(1.05);
+    /* Slightly scale up item on hover */
+
+    .fade-out {
+        animation: fadeOut 0.5s forwards;
+        /* Animation to fade item out */
+    }
+
+    @keyframes fadeOut {
+        to {
+            opacity: 0;
+            height: 0;
+            padding: 0;
+            /* Collapse space as the item fades out */
+            margin: 0;
+        }
+    }
+}
+
+.c_left3 {
+    margin-top: 5rem;
+    /* margin-left: 10rem; */
+    height: 2.5rem;
+    width: 50rem;
+    text-align: start;
+    animation: slidefromLeft 1s ease forwards;
+}
+
+@keyframes slidefromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.c_right3 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+#img3 {
+    height: 250px;
+    width: 250px;
+    margin-left: 7.5rem;
+    border-radius: 0.5rem;
+    margin-right: 2.5rem;
+}
+
+#txt3 {
+    text-align: right;
+
+    padding-top: 1.5rem;
+    font-style: italic;
+    font-style: bold;
+    color: rgb(249, 204, 179);
+}
+
+#img3 {
+    --s: 250px;
+    /* the size of the image */
+    --b: 8px;
+    /* the border thickness*/
+    --g: 14px;
+    /* the gap */
+    --c: #729231;
+    /* the color */
+
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .3s;
+}
+
+#img3:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}
+
+#p3 {
+    text-align: center;
+    color: rgb(249, 204, 179);
+}
+
+.box4 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    padding-top: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.box4:hover {
+    transform: scale(1.05);
+    /* Slightly scale up item on hover */
+
+    .fade-out {
+        animation: fadeOut 0.5s forwards;
+        /* Animation to fade item out */
+    }
+
+    @keyframes fadeOut {
+        to {
+            opacity: 0;
+            height: 0;
+            padding: 0;
+            /* Collapse space as the item fades out */
+            margin: 0;
+        }
+    }
+}
+
+.c_left4 {
+    animation: slidefromRight 1s ease forwards;
+}
+
+@keyframes slidefromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+#img4 {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: end;
+    margin-left: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+#img4 {
+    --s: 250px;
+    /* the size of the image */
+    --b: 8px;
+    /* the border thickness*/
+    --g: 14px;
+    /* the gap */
+    --c: #8a4141;
+    /* the color */
+
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .3s;
+}
+
+#img4:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}
+
+#p4 {
+    text-align: center;
+    margin-left: 1.5rem;
+    color: rgb(248, 207, 252);
+}
+
+#txt4 {
+    text-align: left;
+
+    font-style: italic;
+    font-style: bold;
+    padding-top: 1.5rem;
+    color: rgb(248, 207, 252);
+}
+
+.box5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.box5:hover {
+    transform: scale(1.05);
+    /* Slightly scale up item on hover */
+
+    .fade-out {
+        animation: fadeOut 0.5s forwards;
+        /* Animation to fade item out */
+    }
+
+    @keyframes fadeOut {
+        to {
+            opacity: 0;
+            height: 0;
+            padding: 0;
+            /* Collapse space as the item fades out */
+            margin: 0;
+        }
+    }
+}
+
+.c_left5 {
+    margin-top: 5rem;
+    /* margin-left: 10rem; */
+    height: 2.5rem;
+    width: 50rem;
+    text-align: start;
+    animation: slidefromLeft 1s ease forwards;
+}
+
+@keyframes slidefromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.c_right5 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+#p5 {
+    text-align: center;
+    color: rgb(249, 204, 179);
+}
+
+#img5 {
+    height: 250px;
+    width: 250px;
+    margin-left: 10rem;
+    margin-right: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+#img5 {
+    --s: 250px;
+    /* the size of the image */
+    --b: 8px;
+    /* the border thickness*/
+    --g: 14px;
+    /* the gap */
+    --c: #898d2a;
+    /* the color */
+
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .3s;
+}
+
+#img5:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}
+
+#txt5 {
+    text-align: right;
+
+    padding-top: 1.5rem;
+    font-style: italic;
+    font-style: bold;
+    color: rgb(249, 204, 179);
+}
+
+.box6 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    padding-top: 1.5rem;
+}
+
+.box6:hover {
+    transform: scale(1.05);
+    /* Slightly scale up item on hover */
+
+    .fade-out {
+        animation: fadeOut 0.5s forwards;
+        /* Animation to fade item out */
+    }
+
+    @keyframes fadeOut {
+        to {
+            opacity: 0;
+            height: 0;
+            padding: 0;
+            /* Collapse space as the item fades out */
+            margin: 0;
+        }
+    }
+}
+
+.c_left6 {
+    animation: slidefromRight 1s ease forwards;
+}
+
+@keyframes slidefromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+#img6 {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: end;
+    margin-left: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+#img6 {
+    --s: 250px;
+    /* the size of the image */
+    --b: 8px;
+    /* the border thickness*/
+    --g: 14px;
+    /* the gap */
+    --c: #a27928;
+    /* the color */
+
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .3s;
+}
+
+#img6:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}
+
+#txt6 {
+    text-align: left;
+    margin-left: 3.5rem;
+    font-style: italic;
+    font-style: bold;
+    padding-top: 1.5rem;
+    color: rgb(248, 207, 252);
+}
+
+#p6 {
+    text-align: center;
+    margin-left: 1.5rem;
+    color: rgb(248, 207, 252);
+}
+
+#add {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mt-5_2 {
+    margin-top: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #dceeff;
+}
+
+.btn-success {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    height: 2.5rem;
+    width: 5.5rem;
+}
+
+.menu-item {
+    background-color: #2b4162;
+    color: rgb(254, 245, 233);
+}
+
+.menu-item:hover {
+    background-color: #abbbc5;
+}
+
+h3#add {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    color: #c4dcf4;
+}
+
+.mt-3 {
+    color: beige;
+}
+
+.btn-success {
+    position: relative;
+    left: 50%;
+}
+
+.btn-success:body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #151b29;
+}
+
+.btn-success:button {
+    background: none;
+    color: orange;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.btn-success:hover {
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    display: flex;
+    align-items: center;
+    /* Aligns items vertically */
+    justify-content: space-between;
+    /* Space items evenly */
+    margin-top: 1.5rem;
+}
+
+.c_left1,
+.c_left2,
+.c_left3,
+.c_left4,
+.c_left5,
+.c_left6,
+.c_right1,
+.c_right2,
+.c_right3,
+.c_right4,
+.c_right5,
+.c_right6 {
+    flex: 1;
+    /* Allows left and right content to take equal space */
+}
+
+.c_left1,
+.c_left2,
+.c_left3,
+.c_left4,
+.c_left5,
+.c_left6 {
+    padding: 10px;
+    /* Adding padding for spacing */
+}
+
+.c_right1,
+.c_right2,
+.c_right3,
+.c_right4,
+.c_right5,
+.c_right6 {
+    display: flex;
+    flex-direction: column;
+    /* Aligns the image and button vertically */
+    align-items: center;
+    /* Center aligns the content */
+    padding: 10px;
+    /* Adding padding for spacing */
+}
+
+.add-to-cart {
+    width: 60%;
+    /* Make the button take the full width of the container */
+    padding: 10px;
+    /* Ensure consistent padding */
+    font-size: 1rem;
+    /* Font size for readability */
+    margin-top: 10px;
+    border-radius: 20px;
+    /* Space above the button */
+}
+
+img {
+    height: 150px;
+    /* Uniform height for all images */
+    width: 150px;
+    /* Uniform width for all images */
+    border-radius: 0.5rem;
+    /* Optional styling */
+}
+
+.notification {
+    background-color: rgba(0, 123, 255, 0.8);
+    /* Blue background */
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    /* Ensure it's on top */
+}
